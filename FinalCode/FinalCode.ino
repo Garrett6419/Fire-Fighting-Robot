@@ -73,17 +73,14 @@ void loop() {
 
     if (s1 < 250) {
         Stop();
-        digitalWrite(pump, HIGH);
         analogWrite(pump, PumpPower); 
         activateServo();
     } else if (s2 < 350) {
         Stop();
-        digitalWrite(pump, HIGH);
         analogWrite(pump, PumpPower); 
         activateServo();
     } else if (s3 < 250) {
         Stop();
-        digitalWrite(pump, HIGH);
         analogWrite(pump, PumpPower);
         activateServo();
     } else if (s1 >= 251 && s1 <= 700) {
